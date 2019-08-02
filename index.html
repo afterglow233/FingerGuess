@@ -52,15 +52,15 @@
 <script>
     var r;
     function rock(){
-        document.getElementById("myChoice").innerHTML="<img src=\"images/rock.jpg\"/>";
+        document.getElementById("myChoice").innerHTML="<img src=\"rock.jpg\"/>";
         computerChoice();
     }
     function scissors(){
-        document.getElementById("myChoice").innerHTML="<img src=\"images/scissors.jpg\"/>";
+        document.getElementById("myChoice").innerHTML="<img src=\"scissors.jpg\"/>";
         computerChoice();
     }
     function paper(){
-        document.getElementById("myChoice").innerHTML="<img src=\"images/paper.jpg\"/>";
+        document.getElementById("myChoice").innerHTML="<img src=\"paper.jpg\"/>";
         computerChoice();
     }
     function go(){
@@ -68,13 +68,13 @@
     }
     function computerChoice(){
         if(r<1){
-            document.getElementById("computerChoice").innerHTML="<img src='images/rock.jpg'>";
+            document.getElementById("computerChoice").innerHTML="<img src='rock.jpg'>";
         }
         else if(r<2){
-            document.getElementById("computerChoice").innerHTML="<img src='images/scissors.jpg'>";
+            document.getElementById("computerChoice").innerHTML="<img src='scissors.jpg'>";
         }
         else{
-            document.getElementById("computerChoice").innerHTML="<img src='images/paper.jpg'>";
+            document.getElementById("computerChoice").innerHTML="<img src='paper.jpg'>";
         }
     }
 </script>
