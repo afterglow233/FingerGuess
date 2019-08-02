@@ -51,55 +51,17 @@
 </body>
 <script>
     var r;
-    function rock(){
+     function rock(){
         document.getElementById("myChoice").innerHTML="<img src=\"images/rock.jpg\"/>";
         var computerResult = computerChoice();
-        judge("rock",computerResult)
     }
     function scissors(){
         document.getElementById("myChoice").innerHTML="<img src=\"images/scissors.jpg\"/>";
         var computerResult = computerChoice();
-        judge("scissore",computerResult)
     }
     function paper(){
         document.getElementById("myChoice").innerHTML="<img src=\"images/paper.jpg\"/>";
         var computerResult = computerChoice();
-        judge("paper",computerResult)
-    }
-    function judge(myChoice,computerResult){
-        if(myChoice=="rock"){
-            if(computerResult=="rock"){
-                document.getElementById("result").innerHTML = "lose";
-            }
-            else if(computerResult=="soissors"){
-                document.getElementById("result").innerHTML = "draw";
-            }
-            else if(computerResult=="poper"){
-                document.getElementById("result").innerHTML = "win";
-            }
-        }
-        else if(myChoice=="scissors"){
-            if(computerResult=="rock"){
-                document.getElementById("result").innerHTML = "draw";
-            }
-            else if(computerResult=="soissors"){
-                document.getElementById("result").innerHTML = "win";
-            }
-            else if(computerResult=="poper"){
-                document.getElementById("result").innerHTML = "lose";
-            }
-        }
-        else{
-            if(computerResult=="rock"){
-                document.getElementById("result").innerHTML = "win";
-            }
-            else if(computerResult=="soissors"){
-                document.getElementById("result").innerHTML = "lose";
-            }
-            else if(computerResult=="poper"){
-                document.getElementById("result").innerHTML = "draw";
-            }
-        }
     }
     function go(){
         r = 3*Math.random();
